@@ -6,8 +6,8 @@ import sys
 
 import setuptools
 
-name = 'chaostoolkit-openstack'
-desc = 'Chaos Toolkit Extension for Open Stack.'
+name = "chaostoolkit-openstack"
+desc = "Chaos Toolkit Extension for OpenStack."
 
 with io.open("README.md", encoding="utf-8") as strm:
     long_desc = strm.read()

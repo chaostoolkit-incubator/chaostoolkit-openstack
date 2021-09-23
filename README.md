@@ -1,4 +1,4 @@
- # Chaos Toolkit Extension for Open Stack.
+# Chaos Toolkit Extension for OpenStack.
 
 [![Python versions](https://img.shields.io/pypi/pyversions/chaostoolkit-openstack.svg)](https://www.python.org/)
 
