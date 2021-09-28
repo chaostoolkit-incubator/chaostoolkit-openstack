@@ -45,7 +45,7 @@ author = "chaostoolkit Team"
 author_email = "contact@chaostoolkit.org"
 url = "http://chaostoolkit.org"
 license = "Apache License Version 2.0"
-packages = ["chaosopenstack"]
+packages = setuptools.find_packages(include=["chaosopenstack", "chaosopenstack.*"])
 
 needs_pytest = set(["pytest", "test"]).intersection(sys.argv)
 pytest_runner = ["pytest_runner"] if needs_pytest else []
