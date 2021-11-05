@@ -15,7 +15,6 @@ help:
 $(VIRTUALENV_DIR):
 	$(shell command -v python3) -m venv $(VIRTUALENV_DIR)
 	pip install -U pip setuptools wheel
-	pip install "importlib-metadata>=1.2.0; python_version < '3.8'"
 
 $(VIRTUALENV_DIR)/bin: requirements.txt
 	pip install -r requirements.txt
