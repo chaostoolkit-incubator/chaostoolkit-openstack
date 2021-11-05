@@ -1,8 +1,10 @@
 coverage
 pre-commit
-pycodestyle
-pytest>=2.8
+pytest
 pytest-cov
 pytest-sugar
 requests
 requests_mock
+black
+flake8
+isort
