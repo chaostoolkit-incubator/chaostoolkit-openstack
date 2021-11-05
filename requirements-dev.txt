@@ -8,4 +8,3 @@ requests_mock
 black
 flake8
 isort
-importlib-metadata>=1.2.0; python_version < '3.8'
