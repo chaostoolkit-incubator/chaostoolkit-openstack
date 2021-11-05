@@ -2,7 +2,7 @@ PROJECT_DIR := $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 VIRTUALENV_DIR := $(PROJECT_DIR)/venv
 VIRTUAL_ENV_DISABLE_PROMPT = true
 
-.SHELLFLAGS := -eu -o pipefail -c
+.SHELLFLAGS := -eu -c
 
 PATH := $(VIRTUALENV_DIR)/bin:$(EXTRA_PATH):/usr/local/bin:/bin:$(PATH)
 export PATH
@@ -13,7 +13,7 @@ help:
 		| awk 'BEGIN { FS = ":.*?## " }; { printf "\033[36m%-30s\033[0m %s\n", $$1, $$2 }'
 
 $(VIRTUALENV_DIR):
-	virtualenv -p $(shell command -v python3) $(VIRTUALENV_DIR)
+	$(shell command -v python3) -m venv $(VIRTUALENV_DIR)
 
 $(VIRTUALENV_DIR)/bin: requirements.txt
 	pip install -r requirements.txt
