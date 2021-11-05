@@ -19,7 +19,6 @@ jobs:
           python-version: 3.6
       - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip setuptools
           make install-dev
       - name: Run linting
         run: |
