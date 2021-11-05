@@ -29,21 +29,23 @@ with io.open("README.md", encoding="utf-8") as strm:
     long_desc = strm.read()
 
 classifiers = [
-    "Development Status :: 2 - Pre-Alpha",
+    "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
     "License :: Freely Distributable",
     "Operating System :: OS Independent",
     "License :: OSI Approved :: Apache Software License",
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.5",
     "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: Implementation",
     "Programming Language :: Python :: Implementation :: CPython",
 ]
 author = "chaostoolkit Team"
 author_email = "contact@chaostoolkit.org"
-url = "http://chaostoolkit.org"
+url = "https://chaostoolkit.org"
 license = "Apache License Version 2.0"
 packages = setuptools.find_packages(include=["chaosopenstack", "chaosopenstack.*"])
 
@@ -73,7 +75,7 @@ setup_params = dict(
     install_requires=install_require,
     tests_require=test_require,
     setup_requires=pytest_runner,
-    python_requires=">=3.5.*",
+    python_requires=">=3.6.*",
 )
 
 
